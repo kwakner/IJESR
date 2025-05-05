@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJERS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-...your-integrity-key..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+              <img src="img/IJESR.png" alt="IJESR Logo" style= "margin-left: 5px;" height="50" width="50" class="me-2 logo" />
+              <strong>International Journal of ESG <br> And Sustainability Reporting</strong>
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black me-4 fs-6 active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-black me-4 fs-6" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-6" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Get Started Button -->
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#authModal">
+                    Get started
+                </button>
+            </div>
+        </div>
+      </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="display-4">Explore Knowledge Through Our Journal</h1>
+            <p class="lead">
+                Stay updated with the latest research, insights, and discoveries.
+            </p>
+        </div>
+    </section>
+
+    <!-- Authentication Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Login / Signup</h5>
+                    <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-outline-success w-40 " id="showLogin">
+                            Login
+                        </button>
+                        <button class="btn btn-outline-secondary w-40" id="showSignup">
+                            Signup
+                        </button>
+                    </div>
+                    <hr />
+
+                    <!-- Login Form -->
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control border-2 shadow-none" id="loginEmail" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control border-2 shadow-none" id="loginPassword"
+                                required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-50 d-grid mx-auto ">Login</button>
+                        <div class="text-center mt-3">
+                            <small>Don't have an account?
+                                <a href="#" id="switchToSignup">Sign up</a></small>
+                        </div>
+                    </form>
+
+                    <!-- Signup Form -->
+                    <form id="signupForm" class="d-none">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control border-2 shadow-none" id="signupEmail" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control border-2 shadow-none" id="signupPassword"
+                                required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control border-2 shadow-none" id="confirmPassword"
+                                required />
+                        </div>
+                        <button type="submit" class="btn btn-success w-50 d-grid mx-auto">
+                            Signup
+                        </button>
+                        <div class="text-center mt-3">
+                            <small>Already have an account?
+                                <a href="#" id="switchToLogin">Login</a></small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- search bar -->
+
+    <div class="container mt-4 mb-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 search-bar">
+          <input type="text" id="searchInput" class="form-control p-3 shadow-none" placeholder="Search by Volume, Topic, Author, or Year...">
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <section class="journal-section  ">
+        <div class="journal-container">
+          <!-- Filter Panel -->
+          <aside class="filter-panel col-lg-3 col-md-4 w-100">
+            <h4>Filter By</h4>
+            
+            <div class="filter-group">
+              <h4>Volume</h4>
+              <label><input type="checkbox" class="filter" data-filter-type="volume" value="volume1"> Volume 1</label>
+              <label><input type="checkbox" class="filter" data-filter-type="volume" value="volume2"> Volume 2</label>
+              <label><input type="checkbox" class="filter" data-filter-type="volume" value="volume3"> Volume 3</label>
+              <label><input type="checkbox" class="filter" data-filter-type="volume" value="volume4"> Volume 4</label>
+              <label><input type="checkbox" class="filter" data-filter-type="volume" value="volume5"> Volume 5</label>
+            </div>
+      
+            <div class="filter-group">
+              <h4>Year</h4>
+              <label><input type="checkbox" class="filter" data-filter-type="year" value="2020"> 2020</label>
+              <label><input type="checkbox" class="filter" data-filter-type="year" value="2021"> 2021</label>
+              <label><input type="checkbox" class="filter" data-filter-type="year" value="2022"> 2022</label>
+              <label><input type="checkbox" class="filter" data-filter-type="year" value="2023"> 2023</label>
+              <label><input type="checkbox" class="filter" data-filter-type="year" value="2024"> 2024</label>
+            </div>
+      
+            <div class="filter-group">
+              <h4>Topic</h4>
+              <label><input type="checkbox" class="filter" data-filter-type="topic" value="health"> Health</label>
+              <label><input type="checkbox" class="filter" data-filter-type="topic" value="psychology"> Psychology</label>
+              <label><input type="checkbox" class="filter" data-filter-type="topic" value="nutrition"> Nutrition</label>
+              <label><input type="checkbox" class="filter" data-filter-type="topic" value="climate"> Climate</label>
+              <label><input type="checkbox" class="filter" data-filter-type="topic" value="education"> Education</label>
+            </div>
+      
+            <div class="filter-group">
+              <h4>Author</h4>
+              <label><input type="checkbox" class="filter" data-filter-type="author" value="john"> John Doe</label>
+              <label><input type="checkbox" class="filter" data-filter-type="author" value="jane"> Jane Smith</label>
+              <label><input type="checkbox" class="filter" data-filter-type="author" value="emma"> Emma Brown</label>
+              <label><input type="checkbox" class="filter" data-filter-type="author" value="david"> David Lee</label>
+              <label><input type="checkbox" class="filter" data-filter-type="author" value="lisa"> Lisa White</label>
+            </div>
+          </aside>
+      
+          <!-- Journal Content -->
+
+          <div class="container mt-4 col-lg-9 col-md-8">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+              <!-- Volume Loop Start -->
+              <!-- Volume 1 -->
+              <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 1
+                  </button>
+                </h4>
+                    <div class="card p-3 border">
+                      <!-- Accordion Body -->
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                  </div>
+              </div>
+
+               <!-- Volume 2-->
+              <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 2
+                  </button>
+                </h4>
+
+                  <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                  </div>
+              </div>
+              <!-- Volume 3 -->
+               <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+                    <h4 class="text-center">
+                      <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                        Volume 3
+                      </button>
+                    </h4>
+                    <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+               </div>
+              <!-- Volume 4 -->
+              <div class="col publication" data-volume="volume4" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+                    <h4 class="text-center">
+                      <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                        Volume 4
+                      </button>
+                    </h4>
+                    <div class="card p-3 border">
+
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+              </div>
+              <!-- Volume 5 -->
+              <div class="col publication" data-volume="volume5" data-year="2024" data-topic="education" data-author="lisa" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 5
+                  </button>
+                </h4>
+                    <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+              </div>
+              <!-- Volume 6 -->
+              <div class="col publication" data-volume="volume6" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 6
+                  </button>
+                </h4>
+                <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+              </div>
+              <!-- Volume 7 -->
+              <div class="col publication" data-volume="volume7" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 7
+                  </button>
+                </h4>
+                   <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+              </div>
+              <!-- Volume 8 -->
+              <div class="col publication" data-volume="volume8" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 8
+                  </button>
+                </h4>
+                    <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+              </div>
+              <!-- Volume 9 -->
+              <div class="col publication" data-volume="volume9" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+                <h4 class="text-center">
+                  <button class="w-100 border-0 p-1 bg-success rounded mb-0">
+                    Volume 9
+                  </button>
+                </h4>
+                    <div class="card p-3 border">
+                      <div class="accordion-body">
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 1</h5>
+                            <strong>Topic:</strong> Health<br>
+                            <strong>Author:</strong> John Doe<br>
+                            <strong>Year:</strong> 2020
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 2</h5>
+                            <strong>Topic:</strong> Psychology<br>
+                            <strong>Author:</strong> Emma Brown<br>
+                            <strong>Year:</strong> 2021
+                          </div>
+                        </a>
+                        <hr>
+                        <a href="toc.html" class="text-decoration-none text-dark issue">
+                          <div class="mb-2">
+                            <h5 class="text-success">Subject 3</h5>
+                            <strong>Topic:</strong> Nutrition<br>
+                            <strong>Author:</strong> Lisa White<br>
+                            <strong>Year:</strong> 2022
+                          </div>
+                        </a>
+                        <hr>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+          
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          
+          <!-- About Journal -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase mb-3">About Journal</h5>
+            <p class="small">
+              Our journal is dedicated to publishing timely, relevant, and
+              evidence-based content in health, psychology, environment, and lifestyle.
+            </p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" class="footer-link">Home</a></li>
+              <li><a href="#!" class="footer-link">About</a></li>
+              <li><a href="#!" class="footer-link">Contact</a></li>
+              <li><a href="#!" class="footer-link">Editors</a></li>
+              <li><a href="#!" class="footer-link">Submit Article</a></li>
+              
+            </ul>
+          </div>
+    
+          <!-- Categories -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3">Categories</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" class="footer-link">Health</a></li>
+              <li><a href="#!" class="footer-link">Psychology</a></li>
+              <li><a href="#!" class="footer-link">Environment</a></li>
+              <li><a href="#!" class="footer-link">Diet & Nutrition</a></li>
+            </ul>
+          </div>
+    
+          <!-- Follow Us -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#!" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#!" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#!" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#!" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="text-center small mt-4">
+          &copy; 2025 Your Journal Name. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
