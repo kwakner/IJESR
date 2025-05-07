@@ -26,39 +26,6 @@ document
   });
 
 
-
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const filters = document.querySelectorAll('.filter');
-  //   const publications = document.querySelectorAll('.publication');
-
-  //   filters.forEach(filter => {
-  //     filter.addEventListener('change', () => {
-  //       const activeFilters = {
-  //         volume: [],
-  //         year: [],
-  //         topic: [],
-  //         author: []
-  //       };
-
-  //       filters.forEach(input => {
-  //         if (input.checked) {
-  //           const type = input.getAttribute('data-filter-type');
-  //           activeFilters[type].push(input.value.toLowerCase());
-  //         }
-  //       });
-
-  //       publications.forEach(pub => {
-  //         const matches = Object.entries(activeFilters).every(([type, values]) => {
-  //           return values.length === 0 || values.includes(pub.dataset[type]);
-  //         });
-
-  //         pub.style.display = matches ? 'block' : 'none';
-  //       });
-  //     });
-  //   });
-  // });
-
-
   // Search Filter
   
   document.addEventListener("DOMContentLoaded", function () {
@@ -108,93 +75,21 @@ document
   });
 
 
+  // JOURNAL DIRCTORY TAB PRICIPLES
 
+  const links = document.querySelectorAll(".tab-link");
+  const contents = document.querySelectorAll(".tab-content");
 
+  links.forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
 
+    // Remove active classes
+    links.forEach(l => l.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
 
-
-
-
-
-
-
-// FILTER
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const filters = document.querySelectorAll('.filter');
-  //   const publications = document.querySelectorAll('.publication');
-
-  //   filters.forEach(filter => {
-  //     filter.addEventListener('change', () => {
-  //       const activeFilters = {
-  //         volume: [],
-  //         year: [],
-  //         topic: [],
-  //         author: []
-  //       };
-
-  //       filters.forEach(input => {
-  //         if (input.checked) {
-  //           const type = input.getAttribute('data-filter-type');
-  //           activeFilters[type].push(input.value.toLowerCase());
-  //         }
-  //       });
-
-  //       publications.forEach(pub => {
-  //         const matches = Object.entries(activeFilters).every(([type, values]) => {
-  //           return values.length === 0 || values.includes(pub.dataset[type]);
-  //         });
-
-  //         pub.style.display = matches ? 'block' : 'none';
-  //       });
-  //     });
-  //   });
-  // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  document.addEventListener("DOMContentLoaded", () => {
-//    const checkboxes = document.querySelectorAll('.filter-panel input[type="checkbox"]');
-//    const pubs = document.querySelector('.publication');
-
-//    checkboxes.forEach(box => {
-//      box.addEventListener('change', () => {
-//        const filters = {
-//          volume: getCheckedValues('Volume'),
-//          year: getCheckedValues('Year'),
-//          topic: getCheckedValues('Topic'),
-//          author: getCheckedValues('Author')
-//        };
-
-//        issues.forEach(issue => {
-//          const match =
-//            (filters.volume.length === 0 || filters.volume.includes(issue.dataset.volume)) &&
-//            (filters.year.length === 0 || filters.year.includes(issue.dataset.year)) &&
-//            (filters.topic.length === 0 || filters.topic.includes(issue.dataset.topic)) &&
-//            (filters.author.length === 0 || filters.author.includes(issue.dataset.author));
-
-//           issue.style.display = match ? "block" : "none";
-//         });
-//       });
-//     });
-
-//     function getCheckedValues(title) {
-//       const section = Array.from(document.querySelectorAll('.filter-group'))
-//         .find(g => g.querySelector('h4')?.innerText === title);
-
-//       if (!section) return [];
-
-//       return Array.from(section.querySelectorAll('input[type="checkbox"]:checked'))
-//         .map(cb => cb.value);
-//     }
-//   });
-
+    // Add active to clicked tab and its content
+    this.classList.add("active");
+    document.getElementById(this.dataset.tab).classList.add("active");
+  });
+});
