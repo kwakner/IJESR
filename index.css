@@ -8,12 +8,13 @@
     position: relative;
     padding: 7px 16px;
     border-radius: 6px;
+    font-weight: 500;
     transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
   }
   
   .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link.active {
-    background-color: #e0f0e9; /* light green background */
+    background-color: #c7f1df; /* light green background */
     color: #157347; /* Bootstrap success dark */
     /* transform: translateY(-2px); */
   }
