@@ -28,6 +28,55 @@
     transform: scale(1.5);
   }
 
+  /* FORM FIELD */
+  .auth-modal-card {
+    background: linear-gradient(to bottom, #1e1140, #1e1140);
+    color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .auth-modal-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .auth-modal-input {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .auth-modal-btn {
+    background-color: #6f42c1;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-weight: bold;
+  }
+
+  .auth-modal-btn:hover {
+    background-color: #5a32a3;
+  }
+
+  .auth-modal-switch {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .auth-modal-switch span:hover {
+    text-decoration: underline;
+  }
+
+  .modal-content {
+    border-radius: 2rem;
+  }
+
   .hero {
     position: relative;
     background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")

@@ -1,29 +1,39 @@
 // Login/Signup
-document.getElementById("showLogin").addEventListener("click", function () {
-  document.getElementById("loginForm").classList.remove("d-none");
-  document.getElementById("signupForm").classList.add("d-none");
-});
+function toggleAuth() {
+  const signup = document.getElementById("authSignUp");
+  const login = document.getElementById("authLogin");
+  signup.classList.toggle("d-none");
+  login.classList.toggle("d-none");
+}
 
-document.getElementById("showSignup").addEventListener("click", function () {
-  document.getElementById("signupForm").classList.remove("d-none");
-  document.getElementById("loginForm").classList.add("d-none");
-});
 
-document
-  .getElementById("switchToSignup")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("signupForm").classList.remove("d-none");
-    document.getElementById("loginForm").classList.add("d-none");
-  });
 
-document
-  .getElementById("switchToLogin")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("loginForm").classList.remove("d-none");
-    document.getElementById("signupForm").classList.add("d-none");
-  });
+
+// document.getElementById("showLogin").addEventListener("click", function () {
+//   document.getElementById("loginForm").classList.remove("d-none");
+//   document.getElementById("signupForm").classList.add("d-none");
+// });
+
+// document.getElementById("showSignup").addEventListener("click", function () {
+//   document.getElementById("signupForm").classList.remove("d-none");
+//   document.getElementById("loginForm").classList.add("d-none");
+// });
+
+// document
+//   .getElementById("switchToSignup")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("signupForm").classList.remove("d-none");
+//     document.getElementById("loginForm").classList.add("d-none");
+//   });
+
+// document
+//   .getElementById("switchToLogin")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
+//     document.getElementById("loginForm").classList.remove("d-none");
+//     document.getElementById("signupForm").classList.add("d-none");
+//   });
 
 
   // Search Filter

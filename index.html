@@ -58,7 +58,42 @@
     </section>
 
     <!-- Authentication Modal -->
-    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+     <!-- Trigger Button -->
+<!-- <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authModal">Open Auth Modal</button> -->
+
+<!-- Auth Modal -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content auth-modal-card p-4">
+      <div class="modal-body">
+        <!-- Sign Up Form -->
+        <div id="authSignUp" class="auth-modal-form">
+          <div class="auth-modal-header">Sign Up</div>
+          <input type="text" class="form-control auth-modal-input" placeholder="Username">
+          <input type="email" class="form-control auth-modal-input" placeholder="Email">
+          <input type="password" class="form-control auth-modal-input" placeholder="Password">
+          <button class="w-100 auth-modal-btn">Sign Up</button>
+          <div class="auth-modal-switch" onclick="toggleAuth()">Already have an account? <span>Login</span> </div>
+        </div>
+
+        <!-- Login Form -->
+        <div id="authLogin" class="auth-modal-form d-none">
+          <div class="auth-modal-header">Login</div>
+          <input type="email" class="form-control auth-modal-input" placeholder="Email">
+          <input type="password" class="form-control auth-modal-input" placeholder="Password">
+          <button class="w-100 auth-modal-btn">Login</button>
+          <div class="auth-modal-switch" onclick="toggleAuth()">Don't have an account? <span> Sign Up</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -75,10 +110,10 @@
                             Signup
                         </button>
                     </div>
-                    <hr />
+                    <hr /> -->
 
                     <!-- Login Form -->
-                    <form id="loginForm">
+                    <!-- <form id="loginForm">
                         <div class="mb-3">
                             <label for="loginEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control border-2 shadow-none" id="loginEmail" required />
@@ -93,10 +128,10 @@
                             <small>Don't have an account?
                                 <a href="#" id="switchToSignup">Sign up</a></small>
                         </div>
-                    </form>
+                    </form> -->
 
                     <!-- Signup Form -->
-                    <form id="signupForm" class="d-none">
+                    <!-- <form id="signupForm" class="d-none">
                         <div class="mb-3">
                             <label for="signupEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control border-2 shadow-none" id="signupEmail" required />
@@ -118,11 +153,11 @@
                             <small>Already have an account?
                                 <a href="#" id="switchToLogin">Login</a></small>
                         </div>
-                    </form>
-                </div>
+                    </form> -->
+                <!-- </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- search bar -->
 
@@ -136,7 +171,7 @@
     
 
 
-    <h3 class="text-center" id="tab-title">topic name</h3>
+    <!-- <h3 class="text-center" id="tab-title">topic name</h3> -->
     <section class="journal-section d-flex ">
         <div class="journal-container d-flex">
           <!-- Filter Panel -->
