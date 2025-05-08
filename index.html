@@ -136,16 +136,16 @@
     
 
 
-
-    <section class="journal-section  ">
-        <div class="journal-container">
+    <h3 class="text-center" id="tab-title">topic name</h3>
+    <section class="journal-section d-flex ">
+        <div class="journal-container d-flex">
           <!-- Filter Panel -->
           <aside class="filter-panel col-lg-3 col-md-4 h-75">
             <div class="tabs">
               <h2 class="directory-heading">Journal Directory</h2>
               <h3 class="directory-subheading">Journals</h3>
               <ul class="journal-list">
-                <li><a href="#" class="tab-link " data-tab="tab1">Lorem Ipsum Journal</a></li>
+                <li><a href="#" class="tab-link active " data-tab="tab1">Lorem Ipsum Journal</a></li>
                 <li><a href="#" class="tab-link " data-tab="tab2">Dolor Sit Amet Review</a></li>
                 <li><a href="#" class="tab-link " data-tab="tab3">Consectetur Adipiscing Weekly</a></li>
                 <li><a href="#" class="tab-link " data-tab="tab4">Elit Sed Do Studies</a></li>
@@ -208,10 +208,11 @@
       
           <!-- Journal Content -->
 
-          <div class="container mt-4 col-lg-9 col-md-8">
+          <div class="container col-lg-9 col-md-8 tab-content active" id="tab1">
+
+            
              <!-- TAB 1 -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 tab-content active" id="tab1">
-          
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               <!-- Volume Loop Start -->
               <!-- Volume 9 -->
               <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
@@ -570,513 +571,743 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <!-- TAB 2 -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 tab-content" id="tab2">
-          
-              <!-- Volume Loop Start -->
-              <!-- Volume 9 -->
-              <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
-                <h4 class="text-center">
-                  <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                    Volume 9
-                  </button>
-                </h4>
-                    <div class="card p-3 border">
-                      <!-- Accordion Body -->
-                      <div class="accordion-body">
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 1</h5>
-                            <strong>Topic:</strong> Health<br>
-                            <strong>Author:</strong> John Doe Amemyo<br>
-                            <strong>Year:</strong> 2020
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 2</h5>
-                            <strong>Topic:</strong> Psychology<br>
-                            <strong>Author:</strong> Emma Brown<br>
-                            <strong>Year:</strong> 2021
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 3</h5>
-                            <strong>Topic:</strong> Nutrition<br>
-                            <strong>Author:</strong> Lisa White<br>
-                            <strong>Year:</strong> 2022
-                          </div>
-                        </a>
-                        <hr>
-                      </div>
-                  </div>
-              </div>
-
-               <!-- Volume 8-->
-              <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
-                <h4 class="text-center">
-                  <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                    Volume 8
-                  </button>
-                </h4>
-
-                  <div class="card p-3 border">
-                      <div class="accordion-body">
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 1</h5>
-                            <strong>Topic:</strong> Health<br>
-                            <strong>Author:</strong> John Doe<br>
-                            <strong>Year:</strong> 2020
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 2</h5>
-                            <strong>Topic:</strong> Psychology<br>
-                            <strong>Author:</strong> Emma Brown<br>
-                            <strong>Year:</strong> 2021
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 3</h5>
-                            <strong>Topic:</strong> Nutrition<br>
-                            <strong>Author:</strong> Lisa White<br>
-                            <strong>Year:</strong> 2022
-                          </div>
-                        </a>
-                        <hr>
-                      </div>
-                  </div>
-              </div>
-              <!-- Volume 7 -->
-              <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
-                    <h4 class="text-center">
-                      <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                        Volume 7
-                      </button>
-                    </h4>
-                    <div class="card p-3 border">
-                      <div class="accordion-body">
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 1</h5>
-                            <strong>Topic:</strong> Health<br>
-                            <strong>Author:</strong> John Doe<br>
-                            <strong>Year:</strong> 2020
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 2</h5>
-                            <strong>Topic:</strong> Psychology<br>
-                            <strong>Author:</strong> Emma Brown<br>
-                            <strong>Year:</strong> 2021
-                          </div>
-                        </a>
-                        <hr>
-                        <a href="toc.html" class="text-decoration-none text-dark issue">
-                          <div class="mb-2">
-                            <h5 class="text-success">Issue 3</h5>
-                            <strong>Topic:</strong> Nutrition<br>
-                            <strong>Author:</strong> Lisa White<br>
-                            <strong>Year:</strong> 2022
-                          </div>
-                        </a>
-                        <hr>
-                      </div>
-                    </div>
-              </div>
-            </div>
-
-              <!-- TAB 3 -->
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 tab-content" id="tab3">
-          
-                <!-- Volume Loop Start -->
-                <!-- Volume 9 -->
-                <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
-                  <h4 class="text-center">
-                    <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                      Volume 9
-                    </button>
-                  </h4>
-                      <div class="card p-3 border">
-                        <!-- Accordion Body -->
-                        <div class="accordion-body">
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 1</h5>
-                              <strong>Topic:</strong> Health<br>
-                              <strong>Author:</strong> John Doe Xornam<br>
-                              <strong>Year:</strong> 2020
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 2</h5>
-                              <strong>Topic:</strong> Psychology<br>
-                              <strong>Author:</strong> Emma Brown<br>
-                              <strong>Year:</strong> 2021
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 3</h5>
-                              <strong>Topic:</strong> Nutrition<br>
-                              <strong>Author:</strong> Lisa White<br>
-                              <strong>Year:</strong> 2022
-                            </div>
-                          </a>
-                          <hr>
-                        </div>
-                    </div>
-                </div>
-  
-                 <!-- Volume 8-->
-                <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
-                  <h4 class="text-center">
-                    <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                      Volume 8
-                    </button>
-                  </h4>
-  
-                    <div class="card p-3 border">
-                        <div class="accordion-body">
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 1</h5>
-                              <strong>Topic:</strong> Health<br>
-                              <strong>Author:</strong> John Doe<br>
-                              <strong>Year:</strong> 2020
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 2</h5>
-                              <strong>Topic:</strong> Psychology<br>
-                              <strong>Author:</strong> Emma Brown<br>
-                              <strong>Year:</strong> 2021
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 3</h5>
-                              <strong>Topic:</strong> Nutrition<br>
-                              <strong>Author:</strong> Lisa White<br>
-                              <strong>Year:</strong> 2022
-                            </div>
-                          </a>
-                          <hr>
-                        </div>
-                    </div>
-                </div>
-                <!-- Volume 7 -->
-                 <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
-                      <h4 class="text-center">
-                        <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                          Volume 7
-                        </button>
-                      </h4>
-                      <div class="card p-3 border">
-                        <div class="accordion-body">
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 1</h5>
-                              <strong>Topic:</strong> Health<br>
-                              <strong>Author:</strong> John Doe<br>
-                              <strong>Year:</strong> 2020
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 2</h5>
-                              <strong>Topic:</strong> Psychology<br>
-                              <strong>Author:</strong> Emma Brown<br>
-                              <strong>Year:</strong> 2021
-                            </div>
-                          </a>
-                          <hr>
-                          <a href="toc.html" class="text-decoration-none text-dark issue">
-                            <div class="mb-2">
-                              <h5 class="text-success">Issue 3</h5>
-                              <strong>Topic:</strong> Nutrition<br>
-                              <strong>Author:</strong> Lisa White<br>
-                              <strong>Year:</strong> 2022
-                            </div>
-                          </a>
-                          <hr>
-                        </div>
-                      </div>
-                 </div>
-              </div>
-
-                <!-- TAB 4 -->
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 tab-content" id="tab4">
-          
-                  <!-- Volume Loop Start -->
-                  <!-- Volume 9 -->
-                  <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
-                    <h4 class="text-center">
-                      <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                        Volume 9
-                      </button>
-                    </h4>
-                        <div class="card p-3 border">
-                          <!-- Accordion Body -->
-                          <div class="accordion-body">
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 1</h5>
-                                <strong>Topic:</strong> Health<br>
-                                <strong>Author:</strong> John Doe Nero<br>
-                                <strong>Year:</strong> 2020
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 2</h5>
-                                <strong>Topic:</strong> Psychology<br>
-                                <strong>Author:</strong> Emma Brown<br>
-                                <strong>Year:</strong> 2021
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 3</h5>
-                                <strong>Topic:</strong> Nutrition<br>
-                                <strong>Author:</strong> Lisa White<br>
-                                <strong>Year:</strong> 2022
-                              </div>
-                            </a>
-                            <hr>
-                          </div>
-                      </div>
-                  </div>
-    
-                   <!-- Volume 8-->
-                  <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
-                    <h4 class="text-center">
-                      <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                        Volume 8
-                      </button>
-                    </h4>
-    
-                      <div class="card p-3 border">
-                          <div class="accordion-body">
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 1</h5>
-                                <strong>Topic:</strong> Health<br>
-                                <strong>Author:</strong> John Doe<br>
-                                <strong>Year:</strong> 2020
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 2</h5>
-                                <strong>Topic:</strong> Psychology<br>
-                                <strong>Author:</strong> Emma Brown<br>
-                                <strong>Year:</strong> 2021
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 3</h5>
-                                <strong>Topic:</strong> Nutrition<br>
-                                <strong>Author:</strong> Lisa White<br>
-                                <strong>Year:</strong> 2022
-                              </div>
-                            </a>
-                            <hr>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Volume 7 -->
-                   <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
-                        <h4 class="text-center">
-                          <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                            Volume 7
-                          </button>
-                        </h4>
-                        <div class="card p-3 border">
-                          <div class="accordion-body">
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 1</h5>
-                                <strong>Topic:</strong> Health<br>
-                                <strong>Author:</strong> John Doe<br>
-                                <strong>Year:</strong> 2020
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 2</h5>
-                                <strong>Topic:</strong> Psychology<br>
-                                <strong>Author:</strong> Emma Brown<br>
-                                <strong>Year:</strong> 2021
-                              </div>
-                            </a>
-                            <hr>
-                            <a href="toc.html" class="text-decoration-none text-dark issue">
-                              <div class="mb-2">
-                                <h5 class="text-success">Issue 3</h5>
-                                <strong>Topic:</strong> Nutrition<br>
-                                <strong>Author:</strong> Lisa White<br>
-                                <strong>Year:</strong> 2022
-                              </div>
-                            </a>
-                            <hr>
-                          </div>
-                        </div>
-                   </div>
-                </div>
-
-                  <!-- TAB 5 -->
-                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 tab-content" id="tab5">
-          
-                    <!-- Volume Loop Start -->
-                    <!-- Volume 9 -->
-                    <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
-                      <h4 class="text-center">
-                        <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                          Volume 9
-                        </button>
-                      </h4>
-                          <div class="card p-3 border">
-                            <!-- Accordion Body -->
-                            <div class="accordion-body">
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 1</h5>
-                                  <strong>Topic:</strong> Health<br>
-                                  <strong>Author:</strong> John Doe Kwaku<br>
-                                  <strong>Year:</strong> 2020
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 2</h5>
-                                  <strong>Topic:</strong> Psychology<br>
-                                  <strong>Author:</strong> Emma Brown<br>
-                                  <strong>Year:</strong> 2021
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 3</h5>
-                                  <strong>Topic:</strong> Nutrition<br>
-                                  <strong>Author:</strong> Lisa White<br>
-                                  <strong>Year:</strong> 2022
-                                </div>
-                              </a>
-                              <hr>
-                            </div>
-                        </div>
-                    </div>
-      
-                     <!-- Volume 8-->
-                    <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
-                      <h4 class="text-center">
-                        <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                          Volume 8
-                        </button>
-                      </h4>
-      
-                        <div class="card p-3 border">
-                            <div class="accordion-body">
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 1</h5>
-                                  <strong>Topic:</strong> Health<br>
-                                  <strong>Author:</strong> John Doe<br>
-                                  <strong>Year:</strong> 2020
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 2</h5>
-                                  <strong>Topic:</strong> Psychology<br>
-                                  <strong>Author:</strong> Emma Brown<br>
-                                  <strong>Year:</strong> 2021
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 3</h5>
-                                  <strong>Topic:</strong> Nutrition<br>
-                                  <strong>Author:</strong> Lisa White<br>
-                                  <strong>Year:</strong> 2022
-                                </div>
-                              </a>
-                              <hr>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Volume 7 -->
-                     <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
-                          <h4 class="text-center">
-                            <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
-                              Volume 7
-                            </button>
-                          </h4>
-                          <div class="card p-3 border">
-                            <div class="accordion-body">
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 1</h5>
-                                  <strong>Topic:</strong> Health<br>
-                                  <strong>Author:</strong> John Doe<br>
-                                  <strong>Year:</strong> 2020
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 2</h5>
-                                  <strong>Topic:</strong> Psychology<br>
-                                  <strong>Author:</strong> Emma Brown<br>
-                                  <strong>Year:</strong> 2021
-                                </div>
-                              </a>
-                              <hr>
-                              <a href="toc.html" class="text-decoration-none text-dark issue">
-                                <div class="mb-2">
-                                  <h5 class="text-success">Issue 3</h5>
-                                  <strong>Topic:</strong> Nutrition<br>
-                                  <strong>Author:</strong> Lisa White<br>
-                                  <strong>Year:</strong> 2022
-                                </div>
-                              </a>
-                              <hr>
-                            </div>
-                          </div>
-                     </div>
-                  </div>
           </div>
+
+
+
+          <!-- table2 -->
+
+          <div class="container col-lg-9 col-md-8 tab-content" id="tab2">
+            <!-- TAB 1 -->
+           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+         
+             <!-- Volume Loop Start -->
+             <!-- Volume 9 -->
+             <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 9
+                 </button>
+               </h4>
+                   <div class="card p-3 border">
+                     <!-- Accordion Body -->
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> francis Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Francis<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                 </div>
+             </div>
+
+              <!-- Volume 8-->
+             <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 8
+                 </button>
+               </h4>
+
+                 <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                 </div>
+             </div>
+             <!-- Volume 7 -->
+              <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+                   <h4 class="text-center">
+                     <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                       Volume 7
+                     </button>
+                   </h4>
+                   <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+              </div>
+             <!-- Volume 6 -->
+             <div class="col publication" data-volume="volume4" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+                   <h4 class="text-center">
+                     <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                       Volume 6
+                     </button>
+                   </h4>
+                   <div class="card p-3 border">
+
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+             </div>
+             <!-- Volume 5 -->
+             <div class="col publication" data-volume="volume5" data-year="2024" data-topic="education" data-author="lisa" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 5
+                 </button>
+               </h4>
+                   <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+             </div>
+             <!-- Volume 4 -->
+             <div class="col publication" data-volume="volume6" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 4
+                 </button>
+               </h4>
+               <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+             </div>
+             <!-- Volume 3 -->
+             <div class="col publication" data-volume="volume7" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 3
+                 </button>
+               </h4>
+                  <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+             </div>
+             <!-- Volume 2 -->
+             <div class="col publication" data-volume="volume8" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 2
+                 </button>
+               </h4>
+                   <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+             </div>
+             <!-- Volume 1 -->
+             <div class="col publication" data-volume="volume9" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+               <h4 class="text-center">
+                 <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                   Volume 1
+                 </button>
+               </h4>
+                   <div class="card p-3 border">
+                     <div class="accordion-body">
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 1</h5>
+                           <strong>Topic:</strong> Health<br>
+                           <strong>Author:</strong> John Doe<br>
+                           <strong>Year:</strong> 2020
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 2</h5>
+                           <strong>Topic:</strong> Psychology<br>
+                           <strong>Author:</strong> Emma Brown<br>
+                           <strong>Year:</strong> 2021
+                         </div>
+                       </a>
+                       <hr>
+                       <a href="toc.html" class="text-decoration-none text-dark issue">
+                         <div class="mb-2">
+                           <h5 class="text-success">Issue 3</h5>
+                           <strong>Topic:</strong> Nutrition<br>
+                           <strong>Author:</strong> Lisa White<br>
+                           <strong>Year:</strong> 2022
+                         </div>
+                       </a>
+                       <hr>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- table 3 -->
+         <div class="container col-lg-9 col-md-8 tab-content" id="tab3">
+          <!-- TAB 3-->
+         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+       
+           <!-- Volume Loop Start -->
+           <!-- Volume 9 -->
+           <div class="col publication" data-volume="volume1" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 9
+               </button>
+             </h4>
+                 <div class="card p-3 border">
+                   <!-- Accordion Body -->
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> Doe Francis<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Doe<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+               </div>
+           </div>
+
+            <!-- Volume 8-->
+           <div class="col publication" data-volume="volume2" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 8
+               </button>
+             </h4>
+
+               <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+               </div>
+           </div>
+           <!-- Volume 7 -->
+            <div class="col publication" data-volume="volume3" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+                 <h4 class="text-center">
+                   <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                     Volume 7
+                   </button>
+                 </h4>
+                 <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+            </div>
+           <!-- Volume 6 -->
+           <div class="col publication" data-volume="volume4" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+                 <h4 class="text-center">
+                   <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                     Volume 6
+                   </button>
+                 </h4>
+                 <div class="card p-3 border">
+
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+           </div>
+           <!-- Volume 5 -->
+           <div class="col publication" data-volume="volume5" data-year="2024" data-topic="education" data-author="lisa" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 5
+               </button>
+             </h4>
+                 <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+           </div>
+           <!-- Volume 4 -->
+           <div class="col publication" data-volume="volume6" data-year="2020" data-topic="health" data-author="john" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 4
+               </button>
+             </h4>
+             <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+           </div>
+           <!-- Volume 3 -->
+           <div class="col publication" data-volume="volume7" data-year="2021" data-topic="psychology" data-author="jane" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 3
+               </button>
+             </h4>
+                <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+           </div>
+           <!-- Volume 2 -->
+           <div class="col publication" data-volume="volume8" data-year="2022" data-topic="nutrition" data-author="emma" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 2
+               </button>
+             </h4>
+                 <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+           </div>
+           <!-- Volume 1 -->
+           <div class="col publication" data-volume="volume9" data-year="2023" data-topic="climate" data-author="david" style="transition: opacity 0.3s ease;">
+             <h4 class="text-center">
+               <button class="w-100 border-0 p-1 bg-success-subtle rounded mb-0">
+                 Volume 1
+               </button>
+             </h4>
+                 <div class="card p-3 border">
+                   <div class="accordion-body">
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 1</h5>
+                         <strong>Topic:</strong> Health<br>
+                         <strong>Author:</strong> John Doe<br>
+                         <strong>Year:</strong> 2020
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 2</h5>
+                         <strong>Topic:</strong> Psychology<br>
+                         <strong>Author:</strong> Emma Brown<br>
+                         <strong>Year:</strong> 2021
+                       </div>
+                     </a>
+                     <hr>
+                     <a href="toc.html" class="text-decoration-none text-dark issue">
+                       <div class="mb-2">
+                         <h5 class="text-success">Issue 3</h5>
+                         <strong>Topic:</strong> Nutrition<br>
+                         <strong>Author:</strong> Lisa White<br>
+                         <strong>Year:</strong> 2022
+                       </div>
+                     </a>
+                     <hr>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
         </div>
     </section>
 

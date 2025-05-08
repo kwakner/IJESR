@@ -62,9 +62,9 @@
   }
   
   .journal-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    /* display: inline-flex;  */
+    /* flex-wrap: wrap;  */
+    /* gap: 30px; */
   }
   
   .filter-panel {
@@ -128,20 +128,21 @@
   }
 
   /* ASIDE CONTENT */
+
   .tab-link.active {
-    background-color: #007BFF;
+    background-color: #648b8f;
     color: white;
   }
   
   .tab-content {
     display: none;
     padding: 1rem;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-top: none;
   }
   
   .tab-content.active {
-    display: inline-flex;
+    display: flex;
   }
 
 

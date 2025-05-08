@@ -93,3 +93,15 @@ document
     document.getElementById(this.dataset.tab).classList.add("active");
   });
 });
+
+// header update
+// const tabLinks = document.querySelectorAll('.tab-link');
+// const tabTitle = document.getElementById('tab-title');
+
+// tabLinks.forEach(link => {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const title = this.getAttribute('data-title');
+//     tabTitle.textContent = title;
+//   });
+// });
