@@ -105,13 +105,48 @@ function toggleAuth() {
 });
 
 // header update
-// const tabLinks = document.querySelectorAll('.tab-link');
-// const tabTitle = document.getElementById('tab-title');
+//  const tabLinks = document.querySelectorAll('.tab-link');
+//  const tabTitle = document.getElementById('tab-title');
 
-// tabLinks.forEach(link => {
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const title = this.getAttribute('data-title');
-//     tabTitle.textContent = title;
-//   });
-// });
+//  tabLinks.forEach(link => {
+//    link.addEventListener('click', function (e) {
+//      e.preventDefault();
+//      const title = this.getAttribute('data-title');
+//      tabTitle.textContent = title;
+//    });
+//  });
+
+// Breadcrumb 
+
+ // Function to get query parameters
+  function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      volume: params.get('volume'),
+      issue: params.get('issue'),
+      topic: params.get('topic'),
+      subject: params.get('subject')
+    };
+  }
+
+  // Function to create breadcrumb
+  function createBreadcrumb(params) {
+    const breadcrumb = document.getElementById('breadcrumb');
+    breadcrumb.innerHTML = `
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="volume.html?volume=${params.volume}">Volume ${params.volume}</a></li>
+      <li class="breadcrumb-item"><a href="issue.html?volume=${params.volume}&issue=${params.issue}">Issue ${params.issue}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">${params.topic}</li>
+    `;
+  }
+
+  // Function to set article header
+  function setArticleHeader(params) {
+    document.getElementById('article-title').textContent = params.topic;
+    document.getElementById('article-meta').textContent = `Subject: ${params.subject} | Volume ${params.volume} | Issue ${params.issue}`;
+  }
+
+  // Initialize functions
+  const params = getQueryParams();
+  createBreadcrumb(params);
+  setArticleHeader(params);
